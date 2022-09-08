@@ -100,3 +100,5 @@ vandobj.name="Santosh"
 
 console.log(vandobj)
 
+// output {name: "Santosh", usn: "4jn17cs120", degree: "CS"}
+-----------------------------------------------------------------------------
