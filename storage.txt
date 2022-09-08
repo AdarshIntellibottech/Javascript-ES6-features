@@ -1,0 +1,70 @@
+function hello () {
+  var a =86;
+  console.log(a)
+  
+}
+hello();
+
+--------------------------------------------------------------------------
+let a = 10;
+function f() {
+  if(true){
+    var b=25;
+    console.log(`inside if scope ${b}`)
+
+  }
+  console.log(`outside the scope ${b}`)
+
+   
+}
+f()
+
+// It prints 10
+console.log(a)
+//best example for var and let keyword
+------------------------------------------------------------------------------
+
+
+4145 : 4+1+4+5 = 14: 1+4 =5//
+
+var num = 153089
+var sum = 0;
+
+add(num)
+
+function add(num){
+  let newarr =num.toString().split('')
+  console.log(newarr)
+  if(newarr.length != 1)
+  {
+    newarr.map((data)=>{
+      sum += parseInt(data);
+      
+    })
+    console.log(sum)
+   
+    if(sum >= 9){
+      newarr =sum.toString().split('');
+      sum=0;
+      newarr.map((data)=>{
+        sum += parseInt(data)
+      })
+      if(sum>=9){
+        add(sum)
+      }
+      else{
+        console.log(`The final result is ${sum}`)
+      }
+    }
+    else{
+      console.log(`The final result is ${sum}`)
+    }
+  
+  }
+  else
+  {
+      console.log("The answer is " + newarr)
+  }
+}
+
+

@@ -1,7 +1,3 @@
-function hello () {
-  var a =86;
-  console.log(a)
-  
-}
-hello();
-
+let a = 90;
+let a =80;
+console.log(a)
