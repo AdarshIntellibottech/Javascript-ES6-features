@@ -68,3 +68,19 @@ function add(num){
 }
 
 
+---------------------------------------------------------------------------
+Hoisting in Javascript
+
+Hoisting is a phenomenon in which one can access the function and variables
+even before you have initialized it or u have put some value in it without any error
+
+example:
+
+read()
+console.log(hooist)
+
+function read(){
+  console.log("Hello hoisting")
+}
+var hooist =17;
+
