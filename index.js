@@ -1,9 +1,9 @@
-
-
-
-
-function read(){
-  console.log("Hello hoisting")
+const vandobj = {
+  name: "Adarsh",
+  usn: "4jn17cs120",
+  degree: "CS"
 }
-var hooist =17;
-console.log(read)
+
+vandobj.name="Santosh"
+
+console.log(vandobj)

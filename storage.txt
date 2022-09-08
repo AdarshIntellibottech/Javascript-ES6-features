@@ -88,5 +88,15 @@ when a arrow function is used insted of normal function key word
 javascript will consider it as a normal variable.
 
 -------------------------------------------------------------------------------
+Can a const object be updated (properties)
 
+const vandobj = {
+  name: "Adarsh",
+  usn: "4jn17cs120",
+  degree: "CS"
+}
+
+vandobj.name="Santosh"
+
+console.log(vandobj)
 
