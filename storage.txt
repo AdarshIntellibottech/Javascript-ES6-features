@@ -84,3 +84,9 @@ function read(){
 }
 var hooist =17;
 
+when a arrow function is used insted of normal function key word
+javascript will consider it as a normal variable.
+
+-------------------------------------------------------------------------------
+
+
