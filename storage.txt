@@ -148,4 +148,21 @@ start()
 
 variable declared while writing a program in stored somewhere in memory and that is called as heap
 
+some times function block based on logic external db call will take lot of time to execute in these situation the function is pushed to web api from call stack
 
+web api executes AJAX call, setTimeout, DOM etcc.....
+
+asynchronous calls will be delegated to web api which a programmer doesn't have any control on
+
+After the execution of asychronous call the response & callbacks is stored to task queue so that it will transfer the result to call stack using a call back
+
+Event loop will check if there are any callbacks in task queue if there it will trasfer those to call stack only when the call stack is empty
+
+------------------------------------------------------------------------
+Call Back functions 
+
+Functions that can be passed within an asynchronous function
+call back executes only after the execution of asynchronous function
+
+Though a javascript is an single threaded synchronous language
+with the help of callbacks we can get back asynchrounous nature too
