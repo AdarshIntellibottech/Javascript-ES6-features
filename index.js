@@ -1,24 +1,15 @@
-const arr = [-4, 3, -9, 0, 4, 1]
-var poscount =0;
-var negcount =0;
-var zerocount =0;
-const size = arr.length;
-arr.map((data)=>{
-  if(data>0)
-  {
-     poscount += 1;
-  }
-  else if(data <0)
-  {
-     negcount += 1;
-  }
-  else {
-     zerocount +=1;
-  }
-  
-})
+setTimeout(function () {
+  console.log('an asynchrounous function got triggered');
+}, 5000);
 
-console.log("size of arr", size)
-console.log("positive cases" ,poscount)
-console.log("Negative case", negcount)
-console.log("Zero count", zerocount)
+//setTimeout function will be executed after 5 seconds
+
+function x(y) {
+  console.log('x function executed');
+  y();
+} // x is a normal function where y is passed in the parameter
+
+x(function y() {
+  console.log('Y function executed');
+});
+//here im calling x function where function y logic is written inside a parameter
