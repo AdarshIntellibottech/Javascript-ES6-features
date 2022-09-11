@@ -124,3 +124,28 @@ const {tech, ...baki}= employee;
 console.log(tech)
 ------------------------------------------------------------------------------
 -----------------------------------------------------------------------------
+Event loop in Javascript
+
+Javascript was bascally build for Web browsers like chrome firefox etc
+chrome uses v8 which is single threaded as it has one call stack
+it executes one work at a time
+
+call stack works like a normal stack last in first out
+
+eg: 
+console.log("hello")
+let a=0;
+let b=0;
+function multiply( a*b)
+{
+  let res = a*b;
+  console.log(res)
+}
+function start(){
+  multiply(1*2)
+}
+start()
+
+variable declared while writing a program in stored somewhere in memory and that is called as heap
+
+
