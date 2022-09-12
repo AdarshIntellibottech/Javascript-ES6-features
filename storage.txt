@@ -194,3 +194,16 @@ console.log("positive cases" ,poscount)
 console.log("Negative case", negcount)
 console.log("Zero count", zerocount)
 -----------------------------------------------------------------------------
+
+Closure in javascript
+
+function restart(){
+
+  var x = 4;
+  
+  function innerone(){
+    console.log(x)
+  }
+  innerone()
+}
+restart()
