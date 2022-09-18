@@ -207,3 +207,10 @@ function restart(){
   innerone()
 }
 restart()
+----------------------------------------------------------------
+Hook is a special function it lets u put state into a react function
+hook can only be used in functional components not in class based components.
+
+If you start using state and components without hook it might change the value
+within the js console but it will not be re rendereing the screen again and again.
+
