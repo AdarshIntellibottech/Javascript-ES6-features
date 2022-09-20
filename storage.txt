@@ -207,6 +207,25 @@ function restart(){
   innerone()
 }
 restart()
+
+---------------------------------------------------------------
+setTimeout(function () {
+  console.log('an asynchrounous function got triggered');
+}, 5000);
+
+//setTimeout function will be executed after 5 seconds
+
+function x(y) {
+  console.log('x function executed');
+  y();
+} // x is a normal function where y is passed in the parameter
+
+x(function y() {
+  console.log('Y function executed');
+});
+//here im calling x function where function y logic is written inside a parameter
+
+
 ----------------------------------------------------------------
 Hook is a special function it lets u put state into a react function
 hook can only be used in functional components not in class based components.
@@ -214,3 +233,35 @@ hook can only be used in functional components not in class based components.
 If you start using state and components without hook it might change the value
 within the js console but it will not be re rendereing the screen again and again.
 
+----------------------------------------------------------------------
+UseEffect is a hook that allows the developer to perform a side effects in the components
+it takes two parameters one is a arrow function/ callback function 
+another one can be a variable, array, object etc
+use effect hook executes whenever the application re renders
+
+----------------------------------------------------------------------
+copying object by ref and by value
+
+var arr = [1,2,3,4,5]
+var arr2 = arr
+
+arr2[2]=10
+
+both arr2 and arr will get updated because of same reference
+
+-----------------------------------------------------------------------
+
+var arr = [1,2,3,4,5]
+var arr2 = [...arrr]
+arr2[2]=30
+
+arr2 and arr will not be the same 
+ same thing demonstrated below with example
+let arr1 = [1, 2, 3, 4, 5];
+
+let arr2 = [...arr1];
+
+arr2[3] = 45;
+console.log(arr2);
+console.log(arr1); //deep copy where references of both arr2 and arr1 is different
+--------------------------------------------------------------------
