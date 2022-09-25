@@ -1,4 +1,7 @@
-let value = "98:23"
-let arr1 = [];
-arr1=value.split("")
-console.log(arr1)
+const arr = [5,43,2,32,10,67,89,22]
+let res = [];
+
+res = arr.filter((elem)=>{
+  return elem >= 10
+})
+console.log(res)

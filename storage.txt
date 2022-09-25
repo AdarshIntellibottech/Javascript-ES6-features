@@ -266,4 +266,15 @@ console.log(arr2);
 console.log(arr1); //deep copy where references of both arr2 and arr1 is different
 --------------------------------------------------------------------
 
-Props in functional component
+Usereducer is an alternative hook for usestate
+
+const[state,dispatch] = useReducer(reducer, initialstate)
+// this is declaration part where useReducer function has reducer function and initialstate as parameters
+dispatch is used at the time of calling a function
+
+reducer can be a arrow function which has state and action as parameters
+
+action.type referes to which function we can use if else or a switch case also
+
+https://youtu.be/R5G2acJ6_vQ
+use reducer best example
