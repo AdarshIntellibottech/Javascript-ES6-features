@@ -278,3 +278,20 @@ action.type referes to which function we can use if else or a switch case also
 
 https://youtu.be/R5G2acJ6_vQ
 use reducer best example
+-------------------------------------------------------------------
+splice method in js
+var arr = [23,45,67,88,98];
+var removed = arr.splice(3,1);
+console.log(arr)
+-------------------------------------------------------
+
+Date of creation 
+expected date to finish
+name of the task
+author
+
+With Redux:
+user creates data to be stored store
+
+sign in 
+sign up

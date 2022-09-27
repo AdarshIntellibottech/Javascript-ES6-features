@@ -1,7 +1,11 @@
-const arr = [5,43,2,32,10,67,89,22]
-let res = [];
+let arr = [{name:"adarsh",dob:"12-09-1212"},{}]
 
-res = arr.filter((elem)=>{
-  return elem >= 10
-})
-console.log(res)
+const [ userData, setUserData]= useState(arr)
+
+
+return (
+
+)
+input onChange = ()=>{
+  setUserData()
+}
